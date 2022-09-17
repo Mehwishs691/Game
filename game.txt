@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class finaltopics {
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+      //  float x=((float)Math.random())*100F;
+        float x=((float)Math.random())*100;
+        int y=(int)x;
+        System.out.println("Input a no. between 1 to 100 ");
+        do {
+            int n = sc.nextInt();
+            if (n < y)
+                System.out.println("Smaller than the no.");
+            else if (n > y)
+                System.out.println("Greater than the no.");
+            else{
+                System.out.println("Correct");
+                System.out.println(y);
+            }
+        }while(y>0);
+    }
+}
